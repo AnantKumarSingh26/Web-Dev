@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100vh;
+    background-color: darkkhaki;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    width: 150px;
+    text-align: center;
+    color: white;
+    font-family: cursive;
+    font-weight: 900;
+    font-size: 19px;
+    padding: 1px 0;
+    border: 2px solid rebeccapurple;
+    border-radius: 10px;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.btn:hover{
+    background-color: rgba(255, 0, 0, 0.595);
+    cursor: pointer;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 40%;
+    border: 3px solid;
+    height: 60%;
+    padding: 39px 13px;
+    border-radius: 123vw;
+    gap: 6vh;
+    visibility: hidden;
+}
+
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width:80px;
+    overflow: hidden;
+    height: 80px;
+    border-radius: 50%;
+}
+.img img{
+    width: 100%;
+    object-fit: cover;
+
+    height: 100%;
+    box-sizing: content-box;
+}
