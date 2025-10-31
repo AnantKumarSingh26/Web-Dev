@@ -19,11 +19,11 @@ html,body{
 }
 body.dark{
     background-color: var(--color-dark);
-    color: black;
+    color: var(--color-light);
 }
 body.light{
     background-color: var(--color-light);
-    color: white;
+    color: var(--color-dark);
 }
 .main{
     /* background-color: var(--color-dark); */
@@ -56,4 +56,7 @@ button{
     /* color: var(--color-dark); */
     background-color: #7687b3;
     box-shadow: 2px 3px 84px 18px #56699b;
+}
+p{
+    background-color: #56699b;
 }
