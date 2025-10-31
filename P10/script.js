@@ -109,7 +109,7 @@ function showUsers(arr){
     const card = document.createElement('div');
     card.classList.add('user-card');
     card.style.backgroundImage = `url(${user.pic})`;
-    
+
     // const picElement = document.createElement('img');
     // picElement.src=user.pic;
     // picElement.alt=`Profile Picture of ${user.name}`;
@@ -124,7 +124,6 @@ function showUsers(arr){
     
 
 
-    card.appendChild(picElement);
     card.appendChild(nameElement);
     card.appendChild(bio);
     
@@ -133,3 +132,12 @@ function showUsers(arr){
 }
  
 showUsers(users);
+
+let input=document.querySelector('input');
+input.addEventListener("input", function(){
+  let newUsers = users.filter((user)=>{
+    return user.name.startsWith(input.value);
+  });
+  container.innerHTML="";
+  showUsers(newUsers);
+})
