@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C?M Reminder</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="form-container">
+      <h2>New Call</h2>
+      <form action="">
+        <label for="">Image URL</label>
+        <input required type="text" placeholder="https://imge/pic.jpg" />
+
+        <label for="">Full Name</label>
+        <input required="text" placeholder="Enter Full Name" />
+
+        <label for="">Home Town</label>
+        <input required="text" placeholder="Enter Home Town" />
+
+        <label for="">Purpose</label>
+        <input required="text" placeholder="e.g. , Quick appointment" />
+
+        <label for="">Category</label>
+
+        <label for="" class="tag-checkbox">
+          <input required type="radio" name="Category" value="emergency" />
+          <span>Emergency</span>
+        </label>
+
+        <label for="" class="tag-checkbox">
+          <input required type="radio" name="Category" value="important" />
+          <span>Important</span>
+        </label>
+
+        <label for="" class="tag-checkbox">
+          <input required type="radio" name="Category" value="urgent" />
+          <span>Urgent</span>
+        </label>
+
+        <label for="" class="tag-checkbox">
+          <input required type="radio" name="Category" value="no-rush" />
+          <span>No Rush</span>
+        </label>
+
+        <button class="submit-btn">Create Note</button>
+      </form>
+      <button class="closeForm">close</button>
+    </div>
+
+    <div class="note-container">
+      <div class="left-icons">
+        <button id="add-note" aria-label="Add Note">
+          <i class="ri-add-line"></i>
+        </button>
+        <button id="upBtn" aria-label="Up Buton">
+          <i class="ri-arrow-up-line"></i>
+        </button>
+        <button id="downBtn" aria-label="down button">
+          <i class="ri-arrow-down-line"></i>
+        </button>
+      </div>
+      <div class="stack"></div>
+
+      <div class="right-colors">
+        <span class="dot black"></span><span class="dot purple"></span
+        ><span class="dot orange"></span><span class="dot teal"></span>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

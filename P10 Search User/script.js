@@ -135,8 +135,10 @@ showUsers(users);
 
 let input=document.querySelector('input');
 input.addEventListener("input", function(){
+  const searchInput = input.value.toLowerCase();
   let newUsers = users.filter((user)=>{
-    return user.name.startsWith(input.value);
+    const userName =user.name.toLowerCase();
+    return userName.startsWith(searchInput);
   });
   container.innerHTML="";
   showUsers(newUsers);
