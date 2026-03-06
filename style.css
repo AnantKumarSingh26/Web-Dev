@@ -10,6 +10,8 @@ body {
   height: 100%;
   color: #fff;
   background-image: linear-gradient(to bottom right, #fdabdd, #374a5a);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 nav {
