@@ -39,7 +39,7 @@
 //? console.log(addNumbers(12,2,3));
 //? console.log(addNumbers(12,2,3,98));
 
-//! 5. Create an IIFE that prints `"I run instantly!"`.
+//! 5. Create an IIFE that prints `"I run instantly!"`.✔️
 
 
 // (function(){
@@ -136,40 +136,100 @@ console.log("Connected");
 //! inside parameters to extract and print `name` and
 //! `age`.
 
+//* function abcd(nam,age){
+//*  console.log(nam,age);
+//* }
+//* abcd({nam:'Arsh',age: 24})
+
 //! 4. Demonstrate the difference between normal
 //! function and arrow function when used as object
 //! methods (the `this` issue).
+ 
+//? let obj = {
+//?     nam:'ABC',
+//?     fnc: function () {
+//?         console.log(this);
+//?     },
+//?     fnc2: () => console.log(this),
+//? }
+//? obj.fnc();
+//? obj.fnc2();
+
 
 //! 5. Given an array of numbers, use `map()` to create a
 //! new array where each number is squared.
 
+//* let arr=[1,32,53,12,324];
+//* let newarr = arr.map(function(val){
+//*     console.log(`insidie: ${val}`);    
+//*     return val*val;
+//* });
+//* console.log(newarr);
+
+
 //! 6. Use `filter()` to get only even numbers from an
 //! array.
 
+//? let arr = [13,3,34,34,1,6,7,8,2,8,3];
+//? arr.filter(function(val){
+//?     if(val%2==0)
+//?     {
+//?         console.log(val);
+//?     }
+//? })
+
 //! 7. Use `reduce()` to find the total salary from an array
 //! of numbers `[1000, 2000, 3000]`.
+
+//* function addUnlimited(...nums){
+//*     let ans = nums.reduce(function(acc,value){
+//*         return acc+value
+//*     },0);
+//*     console.log(ans);
+//* }
+//* addUnlimited(1,2,3,5,6);
 
 //! 8. Create an array of names and use `some()` and
 //! `every()` to test a condition (e.g., all names longer than
 //! 3 chars).
 
+//? const names = ["Alice", "Bob", "Charlie","Avi","Rx","DrX","Dm","Daroga"]
+//? let ans= names.some(function(val){
+//?     return val.length>3;
+//? })
+//? let ans2= names.every(function(val){
+//?     return val.length>3;
+//? })
+
 //! 9. Create an object `user` and test the behavior of
 //! `Object.freeze()` and `Object.seal()` by
 //! adding/changing keys.
 
+//* let user= {
+//*     nam:"Falana",
+//*     age:27,
+//*     emaila:"h@h.h"
+//* }
+
+//* Object.seal(user);
+//* user.nam="Dhimkana"
+//* console.log(user.nam);
+//* Object.freeze(user);
+//* user.nam="Falana Bo"
+//* console.log(user);
+
+
 //! 10. Create a nested object (`user → address → city`) and
 //! access the city name inside it.
 
-
-
-
-//? let add = function sum(a,b){
-//?  return a+b;
+//? let obj={
+//?     nam:"Falana",
+//?     address:{
+//?         city:"Murtabik"
+//?     }
 //? }
-//? console.log(add(3,2));
-//? let a=0;
-//? function increment(){
-//?  return ++a;
-//? }
-//? console.log(increment());
-//? console.log(increment());
+//? let {city}= obj.address
+//? console.log(city); or console.log(obj.address.city);
+
+
+// ! -------------------------------------Day-41----------------------------------------
