@@ -16,9 +16,9 @@ copyBtn.addEventListener('click', function() {
 });
 
 button.addEventListener('click', function () {
-    let r = Math.trunc((Math.random() * 255)); 
-    let g = Math.trunc((Math.random() * 255));
-    let b = Math.trunc((Math.random() * 255));
+    let r = Math.trunc((Math.random() * 256)); 
+    let g = Math.trunc((Math.random() * 256));
+    let b = Math.trunc((Math.random() * 256));
 
     color_value = `rgb(${r},${g},${b})`;
     color.style.backgroundColor = color_value;
