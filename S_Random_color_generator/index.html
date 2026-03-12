@@ -4,16 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random Color Generator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
+      <div class="color-value">
+        <p class="value">rgb(0,0,0)</p>
+        <button id="copy" class="btn">
+          <i class="ri-clipboard-fill"></i>
+        </button>
+      </div>
       <div class="color">
-        <p>
-            Click for Random Colors
-        </p>
-    </div>
-      <button>Change!</button>
+        <p class="text">Click for Random Colors</p>
+      </div>
+      <button id="change" class="btn">Change!</button>
     </main>
     <script src="script.js"></script>
   </body>
