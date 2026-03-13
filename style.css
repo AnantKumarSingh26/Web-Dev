@@ -17,6 +17,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 body nav {
   position: fixed;
