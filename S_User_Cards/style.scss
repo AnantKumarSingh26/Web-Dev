@@ -7,3 +7,66 @@ html,body{
     width: 100%;
     height: 100%;
 }
+
+body {
+  background: url('https://img.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_1142-8392.jpg?semt=ais_rp_progressive&w=740&q=80') 
+              no-repeat center center fixed;
+  background-size: cover;
+}
+
+main{
+    margin: 10px;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
+    .card{
+        background-image: url('https://img.pikbest.com/backgrounds/20190720/globalization-technology-invitation-background_1899311.jpg!sw800');
+        width: 300px;
+        height: 500px;
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: aquamarine;
+        background-blend-mode: multiply;
+        transition: transform 0.4s ease;
+        img{
+            width: 280px;
+            border-radius:5%;
+        }
+        h1{
+            font-family: monospace;
+            font-size: 2rem;
+        }
+        p{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1.5rem;
+        }
+        .tags{
+            display: flex;
+            gap: 10px;
+            span{
+                transition: transform 0.4s ease-out;
+                padding: 5px 10px;
+                background-color: rgba(127, 255, 212, 0.288);
+                text-transform: capitalize;
+                border-radius:8px;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+        #about{
+            font-size: 0.8rem;
+        }
+        &:hover{
+            z-index: 10;
+            transform: scale(1.05);
+        }
+    }
+}
