@@ -113,16 +113,13 @@ function showUsers(arr){
     // const picElement = document.createElement('img');
     // picElement.src=user.pic;
     // picElement.alt=`Profile Picture of ${user.name}`;
-    // // card.setAttribute(background-Image,user.pic)
+    // card.setAttribute(background-Image,user.pic)
 
     const nameElement=document.createElement('h3');
     nameElement.textContent =user.name;
 
     const bio= document.createElement('p');
     bio.textContent= user.bio;
-
-    
-
 
     card.appendChild(nameElement);
     card.appendChild(bio);
