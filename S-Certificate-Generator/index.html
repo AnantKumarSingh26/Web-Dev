@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Generator</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+       <div id="form">
+         <form id="Certificate-form">
+
+            <label for="name">Enter Full Name : </label>
+            <input type="text" placeholder="Enter Full name" id="name">
+
+            <label for="college">Enter College Name : </label>
+            <input type="text" id="college" placeholder="Enter College name">
+
+            <label for="internship">Enter Internship Name : </label>
+            <input type="text" placeholder="Enter Internship Name" id="internship">
+
+            <label for="Rating">Enter Rating of Employee : </label>
+           <select name="" id="Rating">
+                <option value="">Select Rating</option>
+                <option value="Excellent">Excellent</option>
+                <option value="Average">Average</option>
+                <option value="Satisfactory">Satisfactory</option>
+                <option value="Bad">Bad</option>
+           </select>
+
+           <button>Submit</button>
+        </form>
+       </div>
+    <div class="certificate-container">
+    <div class="certificate-border">
+        <div class="watermark">INTERNSHIP</div>
+        
+        <div class="header">
+            <h1>Certificate of Internship</h1>
+            <p>This is to certify that</p>
+        </div>
+
+        <div class="content">
+            <h2 id="display-name">[Student Name]</h2>
+            <p>has successfully completed an internship at</p>
+            <h3 id="display-college">[Company/College Name]</h3>
+            <p>in the field of <span id="display-internship">[Internship Topic]</span></p>
+        </div>
+
+        <div class="footer">
+            <div class="seal">
+                <div class="seal-inner">OFFICIAL</div>
+            </div>
+            <div class="signature-box">
+                <div class="line">
+                    <img src="assets/sign.png" alt="sign" width="120px" srcset="">
+                </div>
+                <p>Authorized Signature</p>
+            </div>
+        </div>
+    </div>
+</div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
