@@ -1,24 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Certificate</title>
-    <link rel="stylesheet" href="certificate.css">
-</head>
-<body>
+    <link rel="stylesheet" href="certificate.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <main>
-        <div class="container">
-            <h1>Certificate of Internship</h1>
-            <p>This is to certify that</p>
-            <h1>Student Name</h1>
-            <p>has successfully completed an internship at <span class=" cllg">Company/College Name</span>
-            in the field of <span class="topic">Intership Topic</span><br>Rating : <span class="rating">****</span></p>
-            <div class="bottom">
-                <div class="official"></div>
-                <div class="sign">______________ <br> Authorized Signature</div>
-            </div>
+      <div class="container">
+        <h1 class="head">Certificate of Internship</h1>
+        <p id="start">This is to certify that</p>
+        <h1 id = "nam">Student Name</h1>
+        <p id="details">
+          has successfully completed an internship at
+          <span class="cllg">Company/College Name</span> in the field of
+          <span class="topic">Intership Topic</span><br />Rating :
+          <span class="rating"><i class="ri-star-s-fill"></i></span>
+        </p>
+        <div class="bottom">
+          <div class="official">
+            <p>official</p>
+          </div>
+          <div class="sign">
+            <img src="assets/sign-jukebox-bg-removed.png" alt="Signature" srcset="" />
+            <p>_________________________<br />Authorized Signature</p>
+          </div>
         </div>
+      </div>
+      <script src="script.js"></script>
     </main>
-</body>
+  </body>
 </html>
