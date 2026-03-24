@@ -1,3 +1,8 @@
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
 * {
   margin: 0;
   padding: 0;
@@ -11,4 +16,46 @@ html, body {
 
 body {
   background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+body .box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 300px;
+  padding: 0 15px 15px 15px;
+  box-shadow: 0 0 0px rgb(245, 0, 241);
+  border-radius: 25px;
+  background: linear-gradient(#000, #000) padding-box, conic-gradient(from var(--rotate), #000, rgb(245, 0, 241), #000) border-box;
+  border: 0px;
+  animation: borderAnimate 2s linear infinite;
+  animation-play-state: paused;
+  transition: all 0.3s linear;
+}
+body .box:hover {
+  color: rgb(245, 0, 241);
+  animation-play-state: running;
+  box-shadow: 0 0 50px rgb(245, 0, 241);
+  border: 5px solid transparent;
+  text-shadow: 0 0 20px rgb(255, 113, 253);
+}
+body .box img {
+  width: 100%;
+  border-radius: 15px;
+}
+body .box p {
+  font-size: 1rem;
+}
+
+@keyframes borderAnimate {
+  from {
+    --rotate: 0deg;
+  }
+  to {
+    --rotate: 360deg;
+  }
 }/*# sourceMappingURL=style.css.map */
