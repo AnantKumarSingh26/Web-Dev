@@ -1,17 +1,13 @@
-const api='1616f68b69c9fa4dad2db19cb5ea3e5f1616f68b69c9fa4dad2db19cb5ea3e5f'
-const url = `https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid=${api}`;
+const api='972a85b4bd15444a85198d3edd701599'
+const url = `https://api.rawg.io/api/platforms?key=${api}`;
 
-async function  getWeather(city = 'London') {
+
+
+async function gameData(){
     let raw = await fetch(url);
-    console.log(raw);
-    
     let realData = await raw.json();
     console.log(realData);
-}
-try{
-    getWeather();
-
-}catch(err){
-    console.log('We are having error');
+    console.log('hi');
     
 }
+gameData();
